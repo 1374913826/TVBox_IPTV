@@ -1,1 +1,14 @@
+name: TV Search
 
+on:
+  schedule:
+    - cron: '0 */2 * * *' # 每2小时触发一次
+  workflow_dispatch:
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # 
